@@ -2,6 +2,12 @@
 import * as THREE from "https://cdn.skypack.dev/three@0.129.0/build/three.module.js";
 // To allow for the camera to move around the scene
 import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js";
+// To allow for importing the .stl file
+import {STLLoader} from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/STLLoader.js";
+// To allow for importing the .3mf file
+import {M3FLoader} from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/3MFLoader.js";
+// To allow for importing the .3dm file
+import {M3DLoader} from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/3MDLoader.js";
 // To allow for importing the .gltf file
 import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js";
 
@@ -23,7 +29,11 @@ let controls;
 //Set which object to render
 let objToRender = 'eye';
 
-//Instantiate a loader for the .gltf file
+// Create global variable for loader 
+let loader;
+// Instantiate loader based on file type
+if ()
+//Instantiate a loader if a .gltf file
 const loader = new GLTFLoader();
 
 //Load the file
